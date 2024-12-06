@@ -67,32 +67,148 @@
     </div>
 
     <!-- Main Section -->
-    <main class="grid grid-cols-1 md:grid-cols-2 px-6 sm:px-16 py-8 gap-8">
+    <main class="grid grid-cols-1 md:grid-cols-2 px-6 sm:px-16 py-8 gap-8 relative">
+
         <!-- Left Section (Text and Buttons) -->
-        <div class="left flex flex-col justify-center items-start text-center md:text-left space-y-6">
+        <div class="left flex flex-col justify-center items-center text-center md:items-start md:text-left space-y-6 mt-15">
+
+        <div class="">
+            <img src="Group 1.png" alt="">
+        </div>
+
             <h1 class="text-[32px] sm:text-[40px] font-bold">
                 We provide the best food for you
             </h1>
-            <p class="text-base sm:text-lg">
+            <p class="text-base sm:text-lg max-w-xs sm:max-w-md">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci dicta impedit iste ratione earum accusantium quae, autem saepe illo odio dolorum inventore.
             </p>
-            <div class="flex items-center space-x-4">
-                <button class="bg-black text-white px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md">Menu</button>
-                <button class="bg-buttonbg text-white px-8 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md">Book a table</button>
+
+            <!-- Buttons Centered on Mobile and Aligned Left on Large Screens -->
+            <div class="flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-black text-white px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md shadow-lg">Menu</button>
+                <button class="bg-buttonbg text-white px-8 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md shadow-lg">Book a table</button>
             </div>
-            <!-- Social Icons -->
-            <div class="mt-4 flex space-x-4">
+
+            <!-- Social Icons Centered on Mobile, Left Aligned on Large Screens -->
+            <div class="mt-4 flex items-center justify-center md:justify-start space-x-4">
                 <i class="fa-brands fa-facebook border-2 border-black p-2 rounded-full"></i>
                 <i class="fa-brands fa-instagram border-2 border-black p-2 rounded-full"></i>
                 <i class="fa-brands fa-x-twitter border-2 border-black p-2 rounded-full"></i>
+                <div class="line h-[1px] w-[200px] text-black bg-black ms-5"></div>
             </div>
         </div>
 
         <!-- Right Section (Image) -->
-        <div class="right flex items-center justify-center">
-            <img src="Mask group.png" alt="" class="w-full sm:w-[316px] h-auto object-cover">
+
+        <div class="right flex items-center justify-center relative">
+            
+            <div class="absolute">
+                <img src="Mask group.png" alt="" class="w-full sm:w-[316px] h-auto object-cover">
+            </div>
+
+            <div class="absolute bottom-[240px] h-[300px] w-[300px] start-[40px] -z-[1]">
+                <img src="Group-1.png" alt="">
+            </div>
+
+            <div class="absolute h-[200px] w-[200px] bottom-[350px] end-[50px] -z-[1]">
+                <img src="Group (2).png" alt="">
+            </div>
+            
+            <div class="absolute h-[170px] w-[170px] bottom-[110px] end-[40px] -z-[1]">
+                <img src="Group.png" alt="">
+            </div>
+    
         </div>
+
+        <div class="absolute end-[450px] top-[300px] h-[200px] w-[200px]">
+            <img src="dish-2 1.png" alt="">
+        </div>
+
     </main>
+
+    <!-- Our Special Dishes -->
+
+    <section class="w-full bg-zinc-100 px-16 h-auto">
+        <div class="pt-9">
+            <h1 class="pt-[40px] text-[32px] sm:text-[40px] font-bold flex items-center justify-center">Our Special Dishes</h1>
+            <p class="flex items-center justify-center text-slate-600 sm:text-[13px] mt-2">Lorem ipsum dolor sit <br> amet, consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt </p>
+        </div>
+
+        <div class="flex flex-nowrap mt-[110px]">
+            <div class="absolute top-[720px]  start-[380px] h-[100px] w-[150px]">
+                <img src="Group (2).png" alt="" class="h-[150px] w-[200px]">
+            </div>
+            <div class="absolute end-[360px]  top-[720px]">
+                <img src="Group.png" alt="" class="h-[150px] w-[150px]">
+            </div>
+    
+            <div class="relative start-[50px] m-10 mt-20">
+                <img src="Rectangle 7.png" alt="">
+                <h1 class="absolute font-bold bottom-[150px] start-[30px] flex justify-center">Lumpia with the source</h1>
+                <p class=" absolute font-lighter bottom-[50px] start-[50px] flex justify-center items-center text-center">Lorem ipsum dolor <br> sit ametconsectetur,  <br> adipisicing elit</p>
+            </div>
+    
+            <div class="absolute top-[990px] start-[196px] items-center">
+                <img src="dish-1 1.png" alt="" class="h-[150px] w-[150px]">
+            </div>
+    
+            <div class="absolute top-[1010px] start-[295px]">
+                <img src="Price.png" alt="">
+            </div>
+    
+            
+            <div class="relative start-[50px] m-10 mt-20">
+                <img src="Rectangle 7.png" alt="">
+                <h1 class="absolute font-bold bottom-[150px] start-[70px] flex justify-center">Fish and Veggie</h1>
+                <p class=" absolute font-lighter bottom-[55px] start-[55px] flex justify-center items-center  text-center">Lorem ipsum dolor <br> sit ametconsectetur,  <br> adipisicing elit.</p>
+            </div>
+    
+            <div class="absolute top-[990px] start-[510px]">
+                <img src="dish-3 1.png" alt="" class="h-[150px] w-[150px]">
+            </div>
+    
+            <div class="absolute top-[1020px] start-[610px]">
+                <img src="Price.png" alt="">
+            </div>
+    
+            <div class="relative start-[50px] m-10 mt-20">
+                <img src="Rectangle 7.png" alt="">
+                <h1 class="absolute font-bold bottom-[150px] start-[90px] flex justify-center">Tofu chili</h1>
+                <p class=" absolute font-lighter bottom-[55px] start-[50px] flex justify-center items-center  text-center">Lorem ipsum dolor <br> sit ametconsectetur,  <br> adipisicing elit.</p>
+            </div>
+    
+            <div class="absolute top-[990px] start-[826px]">
+                <img src="dish-5.png" alt="" class="h-[150px] w-[150px]">
+            </div>
+
+            <div class="absolute top-[1020px] start-[920px]">
+                <img src="Price (2).png" alt="">
+            </div>
+    
+            <div class="relative start-[50px] m-10 mt-20">
+                <img src="Rectangle 7.png" alt="">
+                <h1 class="absolute font-bold bottom-[150px] start-[55px] flex justify-center">Egg and cocumber</h1>
+                <p class=" absolute font-lighter bottom-[55px] start-[55px] flex justify-center items-center  text-center">Lorem ipsum dolor <br> sit ametconsectetur,  <br> adipisicing elit.</p>
+            </div>
+
+            <div class="absolute top-[990px] start-[1150px]">
+                <img src="dish-4.png" alt="" class="h-[150px] w-[150px]">
+            </div>
+
+            <div class="absolute top-[1010px] start-[1240px]">
+                <img src="Price (2).png" alt="">
+            </div>
+
+            <div class="absolute start-[340px] bottom-[-700px]">
+                <img src="Group (3).png" alt="">
+            </div>
+
+            <div class="absolute start-[500px] bottom-[-800px]">
+                <img src="Group (5).png" alt="">
+            </div>
+
+    </section>
+
 
     <script>
         const menuToggle = document.getElementById('menu-toggle');
